@@ -420,6 +420,96 @@ section.show {
   box-shadow: 0 8px 16px var(--accent-glow);
 }
 
+/* ===== CV Section ===== */
+.cv {
+  background: var(--bg-primary);
+}
+
+.cv-header {
+  margin-bottom: 3rem;
+}
+
+.cv-intro {
+  text-align: center;
+}
+
+.cv-intro h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cv-tagline {
+  color: var(--accent);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.cv-section {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.cv-section h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--accent);
+}
+
+.cv-item {
+  margin-bottom: 1.25rem;
+}
+
+.cv-item:last-child {
+  margin-bottom: 0;
+}
+
+.cv-date {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--bg-primary);
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.cv-item h5 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.cv-item p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.cv-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cv-skill-group h5 {
+  font-size: 0.9rem;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+
+.cv-skill-group p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
 /* ===== Projects ===== */
 .projects {
   background: var(--bg-primary);
