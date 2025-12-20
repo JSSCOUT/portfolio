@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <title>Hannah Jade Corpuz - Developer</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Hannah Jade Cyrel Corpuz</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <div class="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#tech" class="nav-link">Tech</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-greeting">Hello, I'm</span>
+        <h1 class="hero-title">Hannah Jade Cyrel Corpuz</h1>
+        <p class="hero-subtitle">Backend Developer & Systems Builde</p>
+        <p class="hero-description">Building scalable backend systems, supported by solid frontend understanding.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <span>View My Work</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="assets/profile.png" alt="Hannah Jade Corpuz">
+          <div class="image-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="section-container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a developer who loves learning how things work and experimenting with new ideas. I enjoy building functional, clean interfaces and continuously improving my craft through every project.</p>
+          <p>My approach combines technical precision with creative problem-solving, always focusing on creating experiences that are both beautiful and intuitive.</p>
+        </div>
+        <div class="about-skills">
+          <h3>Technical Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-tag">HTML</div>
+            <div class="skill-tag">CSS</div>
+            <div class="skill-tag">JavaScript</div>
+            <div class="skill-tag">Dart</div>
+            <div class="skill-tag">PHP</div>
+            <div class="skill-tag">Java</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="section-container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1: LiveStockX Flutter -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3>LiveStockX - Mobile Application</h3>
+            <span class="project-tag">Backend</span>
+          </div>
+          <p class="project-description">LivesStockX is a pre-existing Java application transitioned to Flutter in fulfillment of our course project, aimed at applying course concepts while gaining hands-on experience with Dart and Flutter.</p>
+          <div class="project-tech">
+            <span>Flutter</span>
+            <span>Dart</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>API</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link" aria-label="View live demo">View</a>
+            <a href="https://github.com/Jesse-rie/livestockx_flutter.git" class="project-link" aria-label="View source code">Code</a>
+            <button class="project-link demo-btn" data-video="assets/flutter.mp4" aria-label="Watch demo video">Demo</button>
+          </div>
+        </article>
+
+        <!-- Project 2: LiveStockX Java -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3>LiveStockX - Mobile Application</h3>
+            <span class="project-tag">Backend</span>
+          </div>
+          <p class="project-description">This project was developed in fulfillment of our CodeCraft, in collaboration with my co-developer and designer, and includes Firebase integration as the backend and hosting solution.</p>
+          <div class="project-tech">
+            <span>Java</span>
+            <span>XML</span>
+            <span>PHP</span>
+            <span>API</span>
+            <span>Firebase</span>
+            <span>MySQL</span>
+          </div>
+          <div class="project-links">
+            <a href="https://drive.google.com/drive/mobile/folders/17Y-_SYe-UI8Q6aYuKQdPuWlwkOvdnX6x?usp=sharing" class="project-link" aria-label="View live demo">View</a>
+            <a href="https://github.com/Jesse-rie/livestockX_App.git" class="project-link" aria-label="View source code">Code</a>
+            <button class="project-link demo-btn" data-video="#" aria-label="Watch demo video">Demo</button>
+          </div>
+        </article>
+
+        <!-- Project 3: CLSAS -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3>CLSAS - Web Application</h3>
+            <span class="project-tag">Full Stack</span>
+          </div>
+          <p class="project-description">The Computer Laboratory Student Attendance System (CLSAS) is an automated attendance management solution developed to improve manual tracking processes and fulfill the requirements of our SIA project.</p>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>PHP</span>
+            <span>Node.js</span>
+            <span>MySQL</span>
+            <span>API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://drive.google.com/drive/folders/13HHrGvaKmRPCWkZOpFsUuT2NMYbuQA-Q?usp=sharing" class="project-link" aria-label="View live demo">View</a>
+            <a href="https://github.com/JSSCOUT/sia-web.git" class="project-link" aria-label="View source code">Code</a>
+            <button class="project-link demo-btn" data-video="assets/clsas.mp4" aria-label="Watch demo video">Demo</button>
+          </div>
+        </article>
+
+        <!-- Project 4: JMS -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3>JMS - Desktop Application</h3>
+            <span class="project-tag">Full Stack</span>
+          </div>
+          <p class="project-description">The Janitorial Management System is a VB.NET application developed in fulfillment of our course project, aimed at applying course concepts while gaining hands-on experience with VB.NET and MySQL.</p>
+          <div class="project-tech">
+            <span>VB.NET</span>
+            <span>MySQL</span>
+          </div>
+          <div class="project-links">
+            <a href="https://drive.google.com/drive/folders/1suvi_hFuR0p4kQF8IxdCmU-kBJOzHi67" class="project-link" aria-label="View live demo">View</a>
+            <a href="https://github.com/JSSCOUT/CorpuzApp.git" class="project-link" aria-label="View source code">Code</a>
+            <button class="project-link demo-btn" data-video="#" aria-label="Watch demo video">Demo</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Section -->
+  <section id="tech" class="tech">
+    <div class="section-container">
+      <h2 class="section-title">How This Site Was Built</h2>
+      <p class="tech-intro">A breakdown of the modern web techniques powering this portfolio.</p>
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-icon">📄</div>
+          <h3>HTML</h3>
+          <ul class="tech-list">
+            <li><strong>Semantic Elements</strong> - Using section, article, and nav for better accessibility and SEO.</li>
+            <li><strong>ARIA Attributes</strong> - Screen reader support with aria-label and aria-expanded.</li>
+            <li><strong>Inline SVGs</strong> - Crisp, scalable icons that inherit CSS colors.</li>
+            <li><strong>Viewport Meta</strong> - Ensures proper responsive scaling on all devices.</li>
+          </ul>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon">🎨</div>
+          <h3>CSS</h3>
+          <ul class="tech-list">
+            <li><strong>Custom Properties</strong> - CSS variables for easy theming.</li>
+            <li><strong>Flexbox & Grid</strong> - Modern layouts using auto-fit and minmax().</li>
+            <li><strong>Backdrop Filter</strong> - Frosted glass effect on the navbar.</li>
+            <li><strong>Smooth Transitions</strong> - Custom timing functions for animations.</li>
+            <li><strong>Gradient Text</strong> - Eye-catching titles using background-clip.</li>
+          </ul>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <ul class="tech-list">
+            <li><strong>Intersection Observer</strong> - Efficient scroll-triggered animations.</li>
+            <li><strong>LocalStorage API</strong> - Persists theme preference across sessions.</li>
+            <li><strong>RequestAnimationFrame</strong> - Smooth 60fps custom scroll animations.</li>
+            <li><strong>Event Throttling</strong> - Optimized scroll handling for performance.</li>
+            <li><strong>System Preference Detection</strong> - Respects OS dark mode setting.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="section-container">
+      <h2 class="section-title">Let's Connect</h2>
+      <div class="contact-content">
+        <p class="contact-description">I'm always interested in hearing about new projects and opportunities. Feel free to reach out!</p>
+        <div class="contact-links">
+          <a href="mailto:jscout2001@email.com" class="contact-link">📧 jscout2001@email.com</a>
+          <a href="https://github.com/JSSCOUT" target="_blank" rel="noopener noreferrer" class="contact-link">💻 github.com/JSSCOUT</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-container">
+      <p>&copy; 2025 Jade Corpuz. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Video Modal -->
+  <div class="video-modal" id="videoModal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <video class="modal-video" id="modalVideo" controls>
+        <source src="" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
