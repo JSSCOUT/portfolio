@@ -1,66 +1,67 @@
-# Hannah Jade Corpuz - Portfolio Website
+# Portfolio - Hannah Jade Corpuz
 
-A modern, responsive personal portfolio website with smooth animations and dark/light theme support.
+A modern, responsive portfolio website showcasing projects and skills.
 
-## Features
+## Git Setup Commands
 
-- **Responsive Design** - Mobile-first approach with hamburger menu for smaller screens
-- **Dark/Light Theme** - Toggle between themes with preference saved to localStorage
-- **Smooth Scrolling** - Custom easing animations for navigation
-- **Scroll Animations** - Sections fade in as you scroll using Intersection Observer
-- **Accessible** - Keyboard navigation, focus states, and ARIA labels
-
-## Project Structure
-
-```
-├── index.html      # Main HTML structure
-├── style.css       # All styles and responsive breakpoints
-├── script.js       # Theme toggle, navigation, animations
-├── assets/
-│   └── profile.png # Profile image
-└── README.md       # This file
+### First Time Setup (Configure Git)
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
 ```
 
-## Sections
-
-| Section | Description |
-|---------|-------------|
-| Hero | Introduction with name, title, and CTA buttons |
-| About | Bio and technical skills grid |
-| Projects | Featured project cards with links |
-| Contact | Email and GitHub links |
-
-## Customization
-
-### Update Personal Info
-Edit `index.html` to change:
-- Name and title in the hero section
-- About me text
-- Skills in the skills grid
-- Project details and links
-- Contact email and GitHub URL
-
-### Change Colors
-Edit CSS variables in `style.css`:
-
-```css
-:root {
-  --accent: #06b6d4;        /* Primary accent color */
-  --accent-hover: #0891b2;  /* Hover state */
-  --bg-primary: #0f172a;    /* Main background */
-  --text-primary: #f1f5f9;  /* Main text color */
-}
+### Initialize Repository
+```bash
+git init
 ```
 
-### Add New Projects
-Copy a project card in `index.html` and update:
-- Project title
-- Tag (Web Design, Full Stack, etc.)
-- Description
-- Tech stack spans
-- Live demo and code URLs
+### Add Files and Commit
+```bash
+git add .
+git commit -m "Your commit message"
+```
 
-## Browser Support
+### Connect to Remote Repository
+```bash
+git remote add origin https://github.com/USERNAME/REPO-NAME.git
+```
 
-- Chrome, Firefox, Safari, Edge (latest versions)
-- Uses CSS custom properties, Intersection Observer, and ES6+
+### Push to Remote
+```bash
+# First push (sets upstream)
+git push -u origin main
+
+# Subsequent pushes
+git push
+```
+
+### If Remote Has Existing Commits
+```bash
+# Option 1: Pull and rebase first
+git pull origin main --rebase
+git push -u origin main
+
+# Option 2: Force push (overwrites remote)
+git push -u origin main --force
+```
+
+### Other Useful Commands
+```bash
+# Check status
+git status
+
+# View remotes
+git remote -v
+
+# Remove remote
+git remote remove origin
+
+# Change remote URL
+git remote set-url origin https://github.com/USERNAME/NEW-REPO.git
+```
+
+## Technologies Used
+
+- HTML5
+- CSS3 (Custom Properties, Flexbox, Grid)
+- JavaScript (Intersection Observer, LocalStorage)
